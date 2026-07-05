@@ -1,0 +1,33 @@
+{
+    "geode": "5.7.1",
+    "gd": {
+        "win": "2.2081"
+    },
+    "id": "netuoso.animator",
+    "name": "Netuoso Animator",
+    "version": "v1.0.0",
+    "developer": "Netuoso",
+    "description": "Keyframe animation tool: record object motion in the editor and compile it into Move/Rotate/Scale triggers.",
+    "resources": {
+        "files": [
+            "resources/*.png"
+        ]
+    },
+    "settings": {
+        "pos-multiplier": {
+            "type": "float",
+            "name": "Move units multiplier",
+            "description": "Multiplier applied to editor-unit deltas when writing Move trigger offsets. 1.0 = raw editor units (30 units = 1 block). Set 0.333 if generated moves travel 3x too far.",
+            "default": 1.0,
+            "min": 0.01,
+            "max": 10.0
+        },
+        "step-seconds": {
+            "type": "float",
+            "name": "Playhead step (seconds)",
+            "default": 0.5,
+            "min": 0.05,
+            "max": 5.0
+        }
+    }
+}
